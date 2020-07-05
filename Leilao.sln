@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leilao", "Leilao\Leilao.csproj", "{1ABB45F1-0613-44D5-B987-F0818EF60B0E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebLeilao", "WebLeilao\WebLeilao.csproj", "{526A9D91-4B2E-4CC1-BC7F-7E22DE75BF5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ABB45F1-0613-44D5-B987-F0818EF60B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ABB45F1-0613-44D5-B987-F0818EF60B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ABB45F1-0613-44D5-B987-F0818EF60B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ABB45F1-0613-44D5-B987-F0818EF60B0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526A9D91-4B2E-4CC1-BC7F-7E22DE75BF5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526A9D91-4B2E-4CC1-BC7F-7E22DE75BF5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526A9D91-4B2E-4CC1-BC7F-7E22DE75BF5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526A9D91-4B2E-4CC1-BC7F-7E22DE75BF5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {729491D1-970F-48C8-ABDB-CC1891823F23}
+	EndGlobalSection
+EndGlobal

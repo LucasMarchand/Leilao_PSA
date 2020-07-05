@@ -1,0 +1,6 @@
+﻿USE [DBLeilao]
+GO
+
+ALTER TABLE Usuarios
+ADD CONSTRAINT FK_Usuario
+FOREIGN KEY (FK_Login) REFERENCES AspNetUsers(Id); 

@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200429124713_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200429124713_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200429125727_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200429125727_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200429131804_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200429131804_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200429131938_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200429131938_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200429134024_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200429134024_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200525222657_Initial.cs" />
+    <Compile Remove="Migrations\20200525222657_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200525223827_Inital.cs" />
+    <Compile Remove="Migrations\20200525223827_Inital.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="jQuery.InputMask" Version="5.0.2" />
+    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.3" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.1.3" />
+  </ItemGroup>
+
+</Project>

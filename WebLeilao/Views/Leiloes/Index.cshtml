@@ -1,0 +1,94 @@
+﻿@model IEnumerable<Leilao.PL.Leilao>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID_Leilao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Natureza)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Forma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Inicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Termino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+            <th>
+                Status
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID_Leilao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Natureza)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Forma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Inicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Termino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario.Nome)
+            </td>
+            <td>
+                @if (item.Inicio > DateTime.Today)
+                {
+                    <p>Não iniciado</p>
+                }
+                else if (item.Inicio < DateTime.Today && item.Termino > DateTime.Today)
+                {
+                    <p>Em andamento</p>
+                }
+                else
+                {
+                    <p>Encerrado</p>
+                }
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID_Leilao">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID_Leilao">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID_Leilao">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
